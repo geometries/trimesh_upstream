@@ -1,0 +1,15 @@
+language: python
+os:
+  - linux
+  - osx
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7-dev"  # 3.7 development branch
+install:
+  - pip install nose2
+  - pip install trimesh[all]
+script:
+  - nose2
