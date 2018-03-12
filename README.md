@@ -8,15 +8,18 @@ In an ideal world, all upstream packages would have wheels for Python 2.7, 3.4-3
 The goal of this is to set up failing packages with a `cibuildwheel` build configuration and then PR to the original project, or fork and set up a new PyPi deployment that `trimesh` can require.
 
 ## Current Status
-- `numpy`: :white_check_mark: great wheel support
-- `scipy`: :white_check_mark: great wheel support
-- `lxml`: :white_check_mark: great wheel support
-- `pyglet`: :white_check_mark: pure Python 2/3
-- `svg.path`: :white_check_mark: pure Python 2/3
-- `colorlog`: :white_check_mark: pure Python 2/3
-- `python-fcl`: :exclamation_mark: Manylinux wheels, no Windows or OSX
-- `msgpack`: :exclamation_mark: ManyLinux wheels
-- `rtree`: :x: wheels require `libspatialindex` (not bundled)
-- `shapely` :x: wheels require `libgeos` (not bundled)
-- `meshpy` :x: :x: requires compilation; fails often
-- `sympy`: :question: depends on `mpmath`, but seems to work generally
+
+Package | Status | Details
+--------|--------|---------
+`numpy` | :white_check_mark: | great wheel support
+`scipy` | :white_check_mark: | great wheel support
+`lxml` | :white_check_mark: | great wheel support
+`pyglet` | :white_check_mark: | pure Python 2/3
+`svg.path` | :white_check_mark: | pure Python 2/3
+`colorlog` | :white_check_mark: | pure Python 2/3
+`python-fcl` | :heavy_exclamation_mark: | Manylinux wheels, no Windows or OSX
+`msgpack` | :heavy_exclamation_mark: | ManyLinux wheels
+`rtree` | :x: | wheels require `libspatialindex` (not bundled)
+`shapely` | :x: | wheels require `libgeos` (not bundled)
+`meshpy` | :x: :x: | requires compilation; fails often
+`sympy` | :question: | depends on `mpmath`, but seems to work generally
