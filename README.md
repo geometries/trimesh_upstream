@@ -11,14 +11,14 @@ The goal of this is to set up failing packages with a `cibuildwheel` build confi
 
 Package | Status | Details
 --------|--------|---------
-`numpy` | :check_mark: | great wheel support
-`scipy` | :check_mark: | great wheel support
-`lxml` | :check_mark: | great wheel support
-`pyglet` | :check_mark: | pure Python 2/3
-`svg.path` | :check_mark: | pure Python 2/3
-`colorlog` | :check_mark: | pure Python 2/3
-`sympy` | :check_mark: | seems to work generally
-`msgpack` | :check_mark: | Manylinux and Windows wheels
+`numpy` | :heavy_check_mark: | great wheel support
+`scipy` | :heavy_check_mark: | great wheel support
+`lxml` | :heavy_check_mark: | great wheel support
+`pyglet` | :heavy_check_mark: | pure Python 2/3
+`svg.path` | :heavy_check_mark: | pure Python 2/3
+`colorlog` | :heavy_check_mark: | pure Python 2/3
+`sympy` | :heavy_check_mark: | seems to work generally
+`msgpack` | :heavy_check_mark: | Manylinux and Windows wheels
 `python-fcl` | :heavy_exclamation_mark: | Manylinux wheels, no Windows or OSX
 `rtree` | :x: | wheels require `libspatialindex` (not bundled)
 `shapely` | :x: | wheels require `libgeos` (not bundled)
