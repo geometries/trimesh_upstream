@@ -10,7 +10,7 @@ python:
 install:
   - pip install nose2
   - pip install trimesh
-  - python -c "import trimesh" #make sure base install works
-  - pip install trimesh[easy]
+  - python -c "import trimesh" # make sure base install works
+  - pip install trimesh[easy]  # see if easy stuff installs cleanly
 script:
   - nose2
